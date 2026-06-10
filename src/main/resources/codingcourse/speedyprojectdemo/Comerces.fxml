@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="98.0" fitWidth="77.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/logo.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="218.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/userLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="269.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="Welcome!">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="269.0" layoutY="44.0" prefHeight="17.0" prefWidth="117.0" text="------------------------">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+
+      <Separator layoutX="-12.0" layoutY="85.0" prefHeight="30.0" prefWidth="414.0" />
+
+      <Label layoutX="34.0" layoutY="115.0" prefHeight="30.0" prefWidth="227.0" text="Comerces">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="154.0" prefHeight="30.0" prefWidth="350.0" text="Select a store, restaurant, anything you want!">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+
+      <VBox layoutX="34.0" layoutY="194.0" spacing="12.0">
+         <children>
+
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8;">
+               <graphic>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/laptop.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="12.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Tech store">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="PC, laptops, accesories" textFill="#888888">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Label text="&gt;" textFill="#bbbbbb">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8;">
+               <graphic>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/pills.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="12.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Drug store">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Health, medicine" textFill="#888888">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Label text="&gt;" textFill="#bbbbbb">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8;">
+               <graphic>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/cutlery.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="12.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Restaurant">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Food and beverages" textFill="#888888">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Label text="&gt;" textFill="#bbbbbb">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+
+         </children>
+      </VBox>
+
+      <Pane layoutY="525.0" prefHeight="75.0" prefWidth="400.0" style="-fx-background-color: #F26513;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="75.0" prefWidth="400.0">
+               <children>
+                  <Label text="Customer support: 772-345(1) option 2" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
