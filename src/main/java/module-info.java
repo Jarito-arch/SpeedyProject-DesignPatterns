@@ -7,5 +7,7 @@ module codingcourse.speedyprojectdemo {
     requires org.kordamp.bootstrapfx.core;
 
     opens codingcourse.speedyprojectdemo to javafx.fxml;
+    opens codingcourse.speedyprojectdemo.Controllers to javafx.fxml;
+
     exports codingcourse.speedyprojectdemo;
 }
