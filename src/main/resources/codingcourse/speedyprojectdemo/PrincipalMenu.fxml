@@ -52,7 +52,7 @@
       <VBox layoutX="34.0" layoutY="194.0" spacing="12.0">
          <children>
 
-            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8;" onAction="#goToComerces">
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8; -fx-cursor: hand;" onAction="#goToComerces">
                <graphic>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
@@ -88,7 +88,7 @@
                </graphic>
             </Button>
 
-            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8;" onAction="#goToShoppingCart">
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8; -fx-cursor: hand;" onAction="#goToShoppingCart">
                <graphic>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
@@ -124,7 +124,7 @@
                </graphic>
             </Button>
 
-            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8;" onAction="#goToOrders">
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8; -fx-cursor: hand;" onAction="#goToOrders">
                <graphic>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
@@ -160,7 +160,7 @@
                </graphic>
             </Button>
 
-            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8;" onAction="#goToTracking">
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="333.0" style="-fx-background-color: white; -fx-border-color: #e0e0e0; -fx-border-radius: 8; -fx-background-radius: 8; -fx-cursor: hand;" onAction="#goToTracking">
                <graphic>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                      <children>
