@@ -12,9 +12,17 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="600.0" prefWidth="400.0"
+            style="-fx-background-color: #ffffff;"
+            xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="codingcourse.speedyprojectdemo.Controllers.ShoppingCartController">
    <children>
-      <ImageView fitHeight="98.0" fitWidth="77.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="98.0" fitWidth="77.0"
+                 layoutX="14.0" layoutY="14.0"
+                 pickOnBounds="true" preserveRatio="true"
+                 onMouseClicked="#goToPrincipalMenu" style="-fx-cursor: hand;">
          <image>
             <Image url="@../../images/logo.png" />
          </image>
