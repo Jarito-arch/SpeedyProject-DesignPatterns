@@ -1,4 +1,4 @@
-package codingcourse.speedyprojectdemo.Controllers;
+package SpeedyProject.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,7 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import javax.swing.*;
 import java.io.IOException;
 
 public class PrincipalMenuController {
@@ -16,7 +15,7 @@ public class PrincipalMenuController {
     private void goToComerces(ActionEvent event) throws IOException{
 
         Parent root = FXMLLoader.load(
-                getClass().getResource("/codingcourse/speedyprojectdemo/Comerces.fxml"));
+                getClass().getResource("/views/Comerces.fxml"));
         Stage stage = (Stage) ((Node) event.getSource())
                 .getScene()
                 .getWindow();
@@ -26,7 +25,7 @@ public class PrincipalMenuController {
     @FXML
     private void goToShoppingCart(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(
-                getClass().getResource("/codingcourse/speedyprojectdemo/ShoppingCart.fxml"));
+                getClass().getResource("/views/ShoppingCart.fxml"));
         Stage stage = (Stage) ((Node) event.getSource())
                 .getScene()
                 .getWindow();
@@ -36,7 +35,7 @@ public class PrincipalMenuController {
     @FXML
     private void goToOrders(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(
-                getClass().getResource("/codingcourse/speedyprojectdemo/Orders.fxml"));
+                getClass().getResource("/Views/Orders.fxml"));
         Stage stage = (Stage) ((Node) event.getSource())
                 .getScene()
                 .getWindow();
@@ -46,7 +45,7 @@ public class PrincipalMenuController {
     @FXML
     private void goToTracking(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(
-                getClass().getResource("/codingcourse/speedyprojectdemo/Tracking.fxml"));
+                getClass().getResource("/Views/Tracking.fxml"));
         Stage stage = (Stage) ((Node) event.getSource())
                 .getScene()
                 .getWindow();

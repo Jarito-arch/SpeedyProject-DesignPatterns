@@ -13,11 +13,11 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ff6a00;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26"
-            fx:controller="codingcourse.speedyprojectdemo.Controllers.LoginController">
+            fx:controller="SpeedyProject.Controllers.LoginController">
    <children>
       <ImageView fitHeight="491.0" fitWidth="466.0" layoutX="-33.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/background.png" />
+            <Image url="@../images/background.png" />
          </image>
       </ImageView>
       <VBox alignment="CENTER" layoutX="36.0" layoutY="279.0" prefHeight="238.0" prefWidth="336.0" spacing="20.0" style="-fx-background-color: #ffff; -fx-background-radius: 20;">
@@ -40,7 +40,7 @@
       </VBox>
       <ImageView fitHeight="254.0" fitWidth="288.0" layoutX="75.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/logo.png" />
+            <Image url="@../images/logo.png" />
          </image>
       </ImageView>
       <Label layoutX="104.0" layoutY="216.0" prefHeight="30.0" prefWidth="214.0" text="Welcome back!" textAlignment="JUSTIFY" textFill="WHITE">

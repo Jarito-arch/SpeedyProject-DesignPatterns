@@ -75,6 +75,7 @@
                 <configuration>
                     <source>21</source>
                     <target>21</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
             <plugin>
@@ -86,7 +87,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>codingcourse.speedyprojectdemo/codingcourse.speedyprojectdemo.HelloApplication
+                            <mainClass>codingcourse.speedyprojectdemo/SpeedyProject.Application.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

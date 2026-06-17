@@ -1,4 +1,4 @@
-package codingcourse.speedyprojectdemo.Controllers;
+package SpeedyProject.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,7 +14,7 @@ public class LoginController {
     @FXML
     private void goToPrincipalMenu(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(
-                getClass().getResource("/codingcourse/speedyprojectdemo/PrincipalMenu.fxml"));
+                getClass().getResource("/Views/PrincipalMenu.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
@@ -22,7 +22,7 @@ public class LoginController {
     @FXML
     private void goToRegister(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(
-                getClass().getResource("/codingcourse/speedyprojectdemo/Register.fxml"));
+                getClass().getResource("/Views/Register.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();

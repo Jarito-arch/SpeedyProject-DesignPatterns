@@ -6,9 +6,11 @@ module codingcourse.speedyprojectdemo {
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
+    requires java.sql;
 
-    opens codingcourse.speedyprojectdemo to javafx.fxml;
-    opens codingcourse.speedyprojectdemo.Controllers to javafx.fxml;
+    opens SpeedyProject.Application to javafx.fxml;
+    opens SpeedyProject.Controllers to javafx.fxml;
 
-    exports codingcourse.speedyprojectdemo;
+    exports SpeedyProject.Application;
+    exports SpeedyProject.Controllers;
 }

@@ -13,11 +13,11 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="584.0" prefWidth="400.0" style="-fx-background-color: #F8F4EA;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="codingcourse.speedyprojectdemo.Controllers.RegisterController">
+            fx:controller="SpeedyProject.Controllers.RegisterController">
    <children>
       <ImageView fitHeight="341.0" fitWidth="400.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/backgroundbeige.png" />
+            <Image url="@../images/backgroundbeige.png" />
          </image>
       </ImageView>
       <VBox alignment="CENTER" layoutX="34.0" layoutY="292.0" prefHeight="288.0" prefWidth="336.0" spacing="10.0" style="-fx-background-color: #ffff; -fx-background-radius: 20;">
@@ -37,7 +37,7 @@
       </VBox>
       <ImageView fitHeight="254.0" fitWidth="288.0" layoutX="75.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/logo.png" />
+            <Image url="@../images/logo.png" />
          </image>
       </ImageView>
       <Label layoutX="104.0" layoutY="216.0" prefHeight="30.0" prefWidth="227.0" text="Create an account" textAlignment="JUSTIFY" textFill="#f5a225">

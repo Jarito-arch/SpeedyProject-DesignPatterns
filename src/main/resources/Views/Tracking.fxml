@@ -13,18 +13,18 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="codingcourse.speedyprojectdemo.Controllers.TrackingController">
+            fx:controller="SpeedyProject.Controllers.TrackingController">
    <children>
       <ImageView fitHeight="98.0" fitWidth="77.0" layoutX="14.0"
                  layoutY="14.0" pickOnBounds="true" preserveRatio="true"
                   onMouseClicked="#goToPrincipalMenu" style="-fx-cursor: hand;">
          <image>
-            <Image url="@../../images/logo.png" />
+            <Image url="@../images/logo.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="218.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/userLogo.png" />
+            <Image url="@../images/userLogo.png" />
          </image>
       </ImageView>
       <Label layoutX="269.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="Welcome!">
@@ -85,7 +85,7 @@
          <children>
             <ImageView fitHeight="218.0" fitWidth="331.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true">
                <image>
-                  <Image url="@../../images/mapa.png" />
+                  <Image url="@../images/mapa.png" />
                </image>
             </ImageView>
          </children>
@@ -95,7 +95,7 @@
          <children>
             <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../images/userLogo.png" />
+                  <Image url="@../images/userLogo.png" />
                </image>
                <HBox.margin>
                   <Insets right="10.0" />
@@ -122,7 +122,7 @@
                <graphic>
                   <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/chatIcon.png" />
+                        <Image url="@../images/chatIcon.png" />
                      </image>
                   </ImageView>
                </graphic>

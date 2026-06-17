@@ -1,4 +1,4 @@
-package codingcourse.speedyprojectdemo.Controllers;
+package SpeedyProject.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,11 +10,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ShoppingCartController {
+public class TrackingController {
     @FXML
     private void goToPrincipalMenu(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(
-                getClass().getResource("/codingcourse/speedyprojectdemo/PrincipalMenu.fxml"));
+                getClass().getResource("/Views/PrincipalMenu.fxml"));
         Stage stage = (Stage) ((Node) event.getSource())
                 .getScene()
                 .getWindow();
