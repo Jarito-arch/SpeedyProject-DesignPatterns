@@ -27,7 +27,7 @@
             <Button mnemonicParsing="false"
                     prefHeight="40.0"
                     prefWidth="250.0"
-                    style="-fx-background-color: #ff6a00; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;"
+                    style="-fx-background-color: #ff6a00; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;"
                     text="Log in"
                     onAction="#goToPrincipalMenu"/>
             <HBox alignment="CENTER" prefHeight="23.0" prefWidth="336.0" spacing="5.0">

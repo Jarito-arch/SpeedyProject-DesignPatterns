@@ -10,9 +10,9 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/Views/Login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/Views/ShoppingCart.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 400, 600);
-        stage.setTitle("SpeedyProject-Login");
+        stage.setTitle("SpeedyProject");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
