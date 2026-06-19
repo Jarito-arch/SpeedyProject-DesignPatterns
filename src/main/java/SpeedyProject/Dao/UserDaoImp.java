@@ -37,6 +37,21 @@ public class UserDaoImp implements UserDao{
 
     @Override
     public boolean register(User user) {
+        try(
+                Connection
+                    connection = DataBaseConnection.getConnection();
+                CallableStatement
+                    callableStatement = connection.prepareCall("{call sp_register(?,?,?)}")
+        ){
+                callableStatement.setString(1,user.getName());
+                callableStatement.setString(2,user.getEmail());
+                callableStatement.setString(3,user.getPassword());
+                callableStatement.execute();
+
+                return true;
+        } catch (Exception e){
+            e.printStackTrace();
+        }
         return false;
     }
 }
