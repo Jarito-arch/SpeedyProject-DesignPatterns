@@ -1,6 +1,6 @@
 package SpeedyProject.Patterns.Observer;
 
-public class Order {
+public class OrderSubject {
     public void addObserver(){
 
     }
