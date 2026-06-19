@@ -1,23 +1,48 @@
 package SpeedyProject.Controllers;
-
+import SpeedyProject.Dao.UserDao;
+import SpeedyProject.Dao.UserDaoImp;
+import SpeedyProject.Models.User;
+import SpeedyProject.Patterns.Singlenton.Session;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
+
 public class LoginController {
+
     @FXML
-    private void goToPrincipalMenu(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(
-                getClass().getResource("/Views/PrincipalMenu.fxml"));
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(root));
-        stage.show();
+    private TextField txtEmail;
+    @FXML
+    private PasswordField txtPassword;
+
+    private UserDao dao = new UserDaoImp();
+
+    @FXML
+    private void login(ActionEvent event) throws IOException{
+        User user = dao.login(txtEmail.getText(), txtPassword.getText());
+        if(user != null){
+            Session.getInstance().setUser(user);
+            FXMLLoader loader =
+                    new FXMLLoader(getClass().getResource("/views/PrincipalMenu.fxml"));
+            System.out.println(
+                    Session.getInstance()
+                            .getCurrentUser()
+                            .getName()
+            );
+            Parent root = loader.load();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } else {
+            System.out.println("Error :(");
+        }
     }
     @FXML
     private void goToRegister(ActionEvent event) throws IOException{

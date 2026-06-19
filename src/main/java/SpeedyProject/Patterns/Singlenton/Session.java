@@ -14,7 +14,7 @@ public class Session {
     //if they call the instance
     // and it's not created
     // it'll use the new, otherwise it will just return the instance
-    public Session getInstance() {
+    public static Session getInstance() {
         if(instance == null){
             instance = new Session();
         }

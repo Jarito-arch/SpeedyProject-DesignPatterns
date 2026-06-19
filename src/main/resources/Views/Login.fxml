@@ -22,14 +22,29 @@
       </ImageView>
       <VBox alignment="CENTER" layoutX="36.0" layoutY="279.0" prefHeight="238.0" prefWidth="336.0" spacing="20.0" style="-fx-background-color: #ffff; -fx-background-radius: 20;">
          <children>
-            <TextField maxWidth="280.0" prefHeight="38.0" prefWidth="200.0" promptText="Email" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #d9d9d9;" />
-            <PasswordField maxWidth="280.0" prefHeight="38.0" prefWidth="150.0" promptText="Pasword" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #d9d9d9;" />
+            <TextField
+                    fx:id="txtEmail"
+                    prefHeight="38.0"
+                    prefWidth="280.0"
+                    promptText="Email"
+                    style="-fx-background-radius: 10;
+           -fx-border-radius: 10;
+           -fx-border-color: #d9d9d9;" />
+
+            <PasswordField
+                    fx:id="txtPassword"
+                    prefHeight="38.0"
+                    prefWidth="280.0"
+                    promptText="Password"
+                    style="-fx-background-radius: 10;
+           -fx-border-radius: 10;
+           -fx-border-color: #d9d9d9;" />
             <Button mnemonicParsing="false"
                     prefHeight="40.0"
                     prefWidth="250.0"
                     style="-fx-background-color: #ff6a00; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;"
                     text="Log in"
-                    onAction="#goToPrincipalMenu"/>
+                    onAction="#login"/>
             <HBox alignment="CENTER" prefHeight="23.0" prefWidth="336.0" spacing="5.0">
                <children>
                   <Label style="-fx-text-fill: #808080;" text="Don't have an account?" />
