@@ -58,14 +58,14 @@ public class RegisterController {
         newUser.setEmail(email);
         newUser.setPassword(password);
         boolean isRegistered = dao.register(newUser);
-        System.out.println("Registered successfully");
 
         if(isRegistered){
+            System.out.println("Registered successfully");
+            SpeedyProject.Patterns.Singlenton.Session.getInstance().setUser(newUser);
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/PrincipalMenu.fxml"));
-            javafx.scene.Parent root = loader.load();
-            javafx.stage.Stage stage = (javafx.stage.Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-            javafx.scene.Scene scene = new javafx.scene.Scene(root);
-            stage.setScene(scene);
+            Parent root = loader.load();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
             stage.show();
         } else {
             System.out.println("Failed to register in DB");
