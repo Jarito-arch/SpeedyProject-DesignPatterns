@@ -9,6 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -21,6 +22,8 @@ public class LoginController {
     private TextField txtEmail;
     @FXML
     private PasswordField txtPassword;
+    @FXML
+    private Label lblError;
 
     private UserDao dao = new UserDaoImp();
 
@@ -41,7 +44,21 @@ public class LoginController {
             stage.setScene(new Scene(root));
             stage.show();
         } else {
-            System.out.println("Error :(");
+            lblError.setText("Correo o contraseña incorrectos");
+
+            txtEmail.setStyle("""
+        -fx-background-radius: 10;
+        -fx-border-radius: 10;
+        -fx-border-color: red;
+        -fx-border-width: 2;
+    """);
+
+            txtPassword.setStyle("""
+        -fx-background-radius: 10;
+        -fx-border-radius: 10;
+        -fx-border-color: red;
+        -fx-border-width: 2;
+    """);
         }
     }
     @FXML

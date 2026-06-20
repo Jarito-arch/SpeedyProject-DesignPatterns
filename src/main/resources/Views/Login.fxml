@@ -12,7 +12,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ff6a00;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SpeedyProject.Controllers.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ff6a00;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26"
+            fx:controller="SpeedyProject.Controllers.LoginController">
    <children>
       <ImageView fitHeight="491.0" fitWidth="466.0" layoutX="-33.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,14 +22,33 @@
       </ImageView>
       <VBox alignment="CENTER" layoutX="36.0" layoutY="279.0" prefHeight="238.0" prefWidth="336.0" spacing="20.0" style="-fx-background-color: #ffff; -fx-background-radius: 20;">
          <children>
-            <TextField fx:id="txtEmail" prefHeight="38.0" prefWidth="280.0" promptText="Correo electrónico" style="-fx-background-radius: 10;            -fx-border-radius: 10;            -fx-border-color: #d9d9d9;" />
+            <TextField
+                    fx:id="txtEmail"
+                    prefHeight="38.0"
+                    prefWidth="280.0"
+                    promptText="Email"
+                    style="-fx-background-radius: 10;
+           -fx-border-radius: 10;
+           -fx-border-color: #d9d9d9;" />
 
-            <PasswordField fx:id="txtPassword" prefHeight="38.0" prefWidth="280.0" promptText="Contraseña" style="-fx-background-radius: 10;            -fx-border-radius: 10;            -fx-border-color: #d9d9d9;" />
-            <Button mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #ff6a00; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;" text="Iniciar sesión" />
+            <PasswordField
+                    fx:id="txtPassword"
+                    prefHeight="38.0"
+                    prefWidth="280.0"
+                    promptText="Password"
+                    style="-fx-background-radius: 10;
+           -fx-border-radius: 10;
+           -fx-border-color: #d9d9d9;" />
+            <Button mnemonicParsing="false"
+                    prefHeight="40.0"
+                    prefWidth="250.0"
+                    style="-fx-background-color: #ff6a00; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-cursor: hand;"
+                    text="Log in"
+                    onAction="#login"/>
             <HBox alignment="CENTER" prefHeight="23.0" prefWidth="336.0" spacing="5.0">
                <children>
-                  <Label style="-fx-text-fill: #808080;" text="¿No tienes una cuenta?" />
-                  <Hyperlink onAction="#goToRegister" style="-fx-text-fill: #ff6a00; -fx-border-color: transparent;" text="Haz clic aquí" />
+                  <Label style="-fx-text-fill: #808080;" text="Don't have an account?" />
+                  <Hyperlink style="-fx-text-fill: #ff6a00; -fx-border-color: transparent;" text="Click here" onAction="#goToRegister"/>
                </children>
             </HBox>
          </children>
@@ -38,12 +58,12 @@
             <Image url="@../images/logo.png" />
          </image>
       </ImageView>
-      <Label layoutX="75.0" layoutY="216.0" prefHeight="30.0" prefWidth="294.0" text="¡Bienvenido de nuevo!" textAlignment="JUSTIFY" textFill="WHITE">
+      <Label layoutX="104.0" layoutY="216.0" prefHeight="30.0" prefWidth="214.0" text="Welcome back!" textAlignment="JUSTIFY" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="120.0" layoutY="244.0" prefHeight="20.0" prefWidth="181.0" text="inicia sesión para continuar" textFill="WHITE">
+      <Label layoutX="139.0" layoutY="244.0" prefHeight="20.0" prefWidth="122.0" text="log in to continue" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
