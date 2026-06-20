@@ -58,7 +58,7 @@
                      <children>
                         <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/laptop.png" />
+                              <Image url="@../images/laptopIcon.png" />
                            </image>
                            <HBox.margin>
                               <Insets right="12.0" />
