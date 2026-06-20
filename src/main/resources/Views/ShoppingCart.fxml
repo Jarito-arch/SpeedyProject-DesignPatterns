@@ -32,7 +32,7 @@
             <Image url="@../images/userLogo.png" />
          </image>
       </ImageView>
-      <Label layoutX="269.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="Welcome!">
+      <Label layoutX="269.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="¡Bienvenido!">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
@@ -44,12 +44,12 @@
       </Label>
       <Separator layoutX="-12.0" layoutY="85.0" opacity="0.5" prefHeight="30.0" prefWidth="414.0" />
 
-      <Label layoutX="34.0" layoutY="115.0" prefHeight="30.0" prefWidth="227.0" text="Shopping cart" textFill="#222222">
+      <Label layoutX="34.0" layoutY="115.0" prefHeight="30.0" prefWidth="227.0" text="Carrito de compras" textFill="#222222">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="34.0" layoutY="145.0" prefHeight="30.0" prefWidth="350.0" text="Check your order" textFill="#666666">
+      <Label layoutX="34.0" layoutY="145.0" prefHeight="30.0" prefWidth="350.0" text="Revisa tu pedido" textFill="#666666">
          <font>
             <Font name="Arial" size="13.0" />
          </font>
@@ -106,7 +106,7 @@
                <children>
                   <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
                      <children>
-                        <Label text="Ibuprofen" textFill="#555555">
+                        <Label text="Ibuprofeno" textFill="#555555">
                            <font>
                               <Font name="Arial Bold" size="15.0" />
                            </font>
@@ -150,7 +150,7 @@
                <children>
                   <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
                      <children>
-                        <Label text="CheeseBurger" textFill="#555555">
+                        <Label text="Hamburguesa con queso" textFill="#555555">
                            <font>
                               <Font name="Arial Bold" size="15.0" />
                            </font>
@@ -205,7 +205,7 @@
             </HBox>
             <HBox alignment="CENTER_LEFT">
                <children>
-                  <Label text="Shipping" textFill="#888888" />
+                  <Label text="Envío" textFill="#888888" />
                   <Pane HBox.hgrow="ALWAYS" />
                   <Label text="S/. 5.00" textFill="#666666" />
                </children>
@@ -229,7 +229,7 @@
          </children>
       </VBox>
 
-      <Button layoutX="48.0" layoutY="478.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="306.0" style="-fx-background-color: #F26513; -fx-background-radius: 25;" text="Order" textFill="WHITE">
+      <Button layoutX="48.0" layoutY="478.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="306.0" style="-fx-background-color: #F26513; -fx-background-radius: 25;" text="Confirmar pedido" textFill="WHITE">
          <font>
             <Font name="Arial Bold" size="15.0" />
          </font>
@@ -239,7 +239,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="65.0" prefWidth="400.0">
                <children>
-                  <Label text="Customer support: 772-345(1) option 2" textFill="WHITE">
+                  <Label text="Atención al cliente: 772-345(1) opción 2" textFill="WHITE">
                      <font>
                         <Font name="Arial" size="12.0" />
                      </font>

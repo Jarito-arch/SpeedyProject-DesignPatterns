@@ -25,12 +25,12 @@
             <Image url="@../images/userLogo.png" />
          </image>
       </ImageView>
-      <Label layoutX="269.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="Welcome!">
+      <Label layoutX="269.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="¡Bienvenido!">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="lblWelcome" layoutX="269.0" layoutY="44.0" prefHeight="17.0" prefWidth="117.0" text="Hi,">
+      <Label fx:id="lblWelcome" layoutX="269.0" layoutY="44.0" prefHeight="17.0" prefWidth="117.0" text="Hola,">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
@@ -38,12 +38,12 @@
 
       <Separator layoutX="-12.0" layoutY="85.0" prefHeight="30.0" prefWidth="414.0" />
 
-      <Label layoutX="34.0" layoutY="115.0" prefHeight="30.0" prefWidth="227.0" text="Principal Menu">
+      <Label layoutX="34.0" layoutY="115.0" prefHeight="30.0" prefWidth="227.0" text="Menú Principal">
          <font>
             <Font name="Arial Bold" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="34.0" layoutY="154.0" prefHeight="30.0" prefWidth="350.0" text="Select an option to get started!">
+      <Label layoutX="34.0" layoutY="154.0" prefHeight="30.0" prefWidth="350.0" text="¡Selecciona una opción para empezar!">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
@@ -66,12 +66,12 @@
                         </ImageView>
                         <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Stores">
+                              <Label text="Tiendas">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label text="Find all you need here" textFill="#888888">
+                              <Label text="Encuentra todo lo que necesitas aquí" textFill="#888888">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
@@ -102,12 +102,12 @@
                         </ImageView>
                         <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Shopping cart">
+                              <Label text="Carrito de compras">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label text="See products you've selected" textFill="#888888">
+                              <Label text="Mira los productos que has seleccionado" textFill="#888888">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
@@ -138,12 +138,12 @@
                         </ImageView>
                         <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Orders">
+                              <Label text="Pedidos">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label text="Manage orders you've done" textFill="#888888">
+                              <Label text="Gestiona los pedidos que has realizado" textFill="#888888">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
@@ -174,12 +174,12 @@
                         </ImageView>
                         <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Tracking">
+                              <Label text="Seguimiento">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label text="Tracking your orders" textFill="#888888">
+                              <Label text="Rastrea tus pedidos" textFill="#888888">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
@@ -203,7 +203,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="75.0" prefWidth="400.0">
                <children>
-                  <Label text="Customer support: 772-345(1) option 2" textFill="WHITE">
+                  <Label text="Atención al cliente: 772-345(1) opción 2" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="14.0" />
                      </font>

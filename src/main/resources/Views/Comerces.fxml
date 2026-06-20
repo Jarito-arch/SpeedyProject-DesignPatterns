@@ -12,13 +12,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="SpeedyProject.Controllers.ComercesController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SpeedyProject.Controllers.ComercesController">
    <children>
-      <ImageView fitHeight="98.0" fitWidth="77.0"
-                 layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true"
-                 onMouseClicked="#goToPrincipalMenu"
-                 style="-fx-cursor: hand;">
+      <ImageView fitHeight="98.0" fitWidth="77.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToPrincipalMenu" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
          <image>
             <Image url="@../images/logo.png" />
          </image>
@@ -29,7 +25,7 @@
             <Image url="@../images/userLogo.png" />
          </image>
       </ImageView>
-      <Label layoutX="269.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="Welcome!">
+      <Label layoutX="269.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="¡Bienvenido!">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
@@ -42,12 +38,12 @@
 
       <Separator layoutX="-12.0" layoutY="85.0" prefHeight="30.0" prefWidth="414.0" />
 
-      <Label layoutX="34.0" layoutY="115.0" prefHeight="30.0" prefWidth="227.0" text="Comerces">
+      <Label layoutX="34.0" layoutY="115.0" prefHeight="30.0" prefWidth="227.0" text="Comercios">
          <font>
             <Font name="Arial Bold" size="25.0" />
          </font>
       </Label>
-      <Label layoutX="34.0" layoutY="154.0" prefHeight="30.0" prefWidth="350.0" text="Select a store, restaurant, anything you want!">
+      <Label layoutX="34.0" layoutY="154.0" prefHeight="30.0" prefWidth="350.0" text="¡Selecciona una tienda, restaurante o lo que quieras!">
          <font>
             <Font name="Arial" size="14.0" />
          </font>
@@ -70,12 +66,12 @@
                         </ImageView>
                         <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Tech store">
+                              <Label text="Tienda de tecnología">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label text="PC, laptops, accesories" textFill="#888888">
+                              <Label text="PC, laptops, accesorios" textFill="#888888">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
@@ -106,12 +102,12 @@
                         </ImageView>
                         <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Drug store">
+                              <Label text="Farmacia">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label text="Health, medicine" textFill="#888888">
+                              <Label text="Salud, medicinas" textFill="#888888">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
@@ -142,12 +138,12 @@
                         </ImageView>
                         <VBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
                            <children>
-                              <Label text="Restaurant">
+                              <Label text="Restaurante">
                                  <font>
                                     <Font name="Arial Bold" size="14.0" />
                                  </font>
                               </Label>
-                              <Label text="Food and beverages" textFill="#888888">
+                              <Label text="Comida y bebidas" textFill="#888888">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
@@ -171,7 +167,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="75.0" prefWidth="400.0">
                <children>
-                  <Label text="Customer support: 772-345(1) option 2" textFill="WHITE">
+                  <Label text="Atención al cliente: 772-345(1) opción 2" textFill="WHITE">
                      <font>
                         <Font name="Arial Bold" size="14.0" />
                      </font>

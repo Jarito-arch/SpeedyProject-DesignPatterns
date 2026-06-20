@@ -28,7 +28,7 @@
             <Image url="@../images/userLogo.png" />
          </image>
       </ImageView>
-      <Label layoutX="269.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="Welcome!">
+      <Label layoutX="269.0" layoutY="30.0" prefHeight="17.0" prefWidth="117.0" text="¡Bienvenido!">
          <font>
             <Font name="Arial Bold" size="12.0" />
          </font>
@@ -40,12 +40,12 @@
       </Label>
       <Separator layoutX="-12.0" layoutY="85.0" opacity="0.5" prefHeight="30.0" prefWidth="414.0" />
 
-      <Label layoutX="34.0" layoutY="115.0" prefHeight="30.0" prefWidth="227.0" text="Orders" textFill="#222222">
+      <Label layoutX="34.0" layoutY="115.0" prefHeight="30.0" prefWidth="227.0" text="Pedidos" textFill="#222222">
          <font>
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="34.0" layoutY="145.0" prefHeight="30.0" prefWidth="350.0" text="Order's history" textFill="#666666">
+      <Label layoutX="34.0" layoutY="145.0" prefHeight="30.0" prefWidth="350.0" text="Historial de pedidos" textFill="#666666">
          <font>
             <Font name="Arial" size="13.0" />
          </font>
@@ -65,7 +65,7 @@
                                     <Font name="Arial Bold" size="15.0" />
                                  </font>
                               </Label>
-                              <Label text="Varied" textFill="#777777">
+                              <Label text="Variado" textFill="#777777">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
@@ -75,7 +75,7 @@
                                     <Font name="Arial" size="11.0" />
                                  </font>
                               </Label>
-                              <Label text="today 2:45pm" textFill="#b5b5b5">
+                              <Label text="hoy 2:45pm" textFill="#b5b5b5">
                                  <font>
                                     <Font name="Arial" size="11.0" />
                                  </font>
@@ -83,7 +83,7 @@
                            </children>
                         </VBox>
 
-                        <Label text="on the way" textFill="#318243">
+                        <Label text="en camino" textFill="#318243">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
@@ -116,12 +116,12 @@
                                     <Font name="Arial Bold" size="15.0" />
                                  </font>
                               </Label>
-                              <Label text="Drug store" textFill="#777777">
+                              <Label text="Farmacia" textFill="#777777">
                                  <font>
                                     <Font name="Arial" size="12.0" />
                                  </font>
                               </Label>
-                              <Label text="yesterday at 5:30pm" textFill="#b5b5b5">
+                              <Label text="ayer a las 5:30pm" textFill="#b5b5b5">
                                  <font>
                                     <Font name="Arial" size="11.0" />
                                  </font>
@@ -129,7 +129,7 @@
                            </children>
                         </VBox>
 
-                        <Label text="delivered" textFill="#318243">
+                        <Label text="entregado" textFill="#318243">
                            <font>
                               <Font name="Arial Bold" size="12.0" />
                            </font>
@@ -158,7 +158,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="65.0" prefWidth="400.0">
                <children>
-                  <Label text="Customer support: 772-345(1) option 2" textFill="WHITE">
+                  <Label text="Atención al cliente: 772-345(1) opción 2" textFill="WHITE">
                      <font>
                         <Font name="Arial" size="12.0" />
                      </font>
