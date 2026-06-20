@@ -15,7 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SpeedyProject.Controllers.ShoppingCartController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SpeedyProject.Controllers.TechStoreControler">
     <children>
         <ImageView fitHeight="98.0" fitWidth="77.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToPrincipalMenu" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
             <image>
