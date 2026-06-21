@@ -4,6 +4,7 @@ import SpeedyProject.DataBase.DataBaseConnection;
 import SpeedyProject.Models.User;
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class UserDaoImp implements UserDao{
@@ -52,6 +53,27 @@ public class UserDaoImp implements UserDao{
         } catch (Exception e){
             e.printStackTrace();
         }
+        return false;
+    }
+
+    @Override
+    public boolean existeEmail(String email) {
+        try (
+                Connection connection = DataBaseConnection.getConnection();
+                PreparedStatement ps = connection.prepareStatement(
+                        "SELECT * FROM users WHERE email = ?")
+        ) {
+
+            ps.setString(1, email);
+
+            ResultSet rs = ps.executeQuery();
+
+            return rs.next();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         return false;
     }
 }

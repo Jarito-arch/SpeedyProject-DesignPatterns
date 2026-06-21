@@ -9,6 +9,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.event.ActionEvent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -34,8 +35,48 @@ public class RegisterController {
     private PasswordField txtPassword;
     @FXML
     private TextField txtConfirmPassword;
+    @FXML
+    private Label lblEmail;
 
     private UserDao dao = new UserDaoImp();
+
+
+    @FXML
+    public void initialize() {
+
+        txtEmail.textProperty().addListener((obs, oldValue, newValue) -> {
+
+            if (newValue.isEmpty()) {
+                lblEmail.setText("");
+                return;
+            }
+
+            if (dao.existeEmail(newValue)) {
+
+                lblEmail.setText("Correo ya registrado");
+                lblEmail.setStyle("-fx-text-fill: red;");
+
+                txtEmail.setStyle("""
+                -fx-background-radius: 10;
+                -fx-border-radius: 10;
+                -fx-border-color: red;
+                -fx-border-width: 2;
+            """);
+
+            } else {
+
+                lblEmail.setText("Correo disponible");
+                lblEmail.setStyle("-fx-text-fill: green;");
+
+                txtEmail.setStyle("""
+                -fx-background-radius: 10;
+                -fx-border-radius: 10;
+                -fx-border-color: green;
+                -fx-border-width: 2;
+            """);
+            }
+        });
+    }
 
     @FXML
     private void register(ActionEvent event) throws IOException{
