@@ -39,12 +39,6 @@
                     style="-fx-background-radius: 10;
            -fx-border-radius: 10;
            -fx-border-color: #d9d9d9;" />
-            <Label fx:id="lblError"
-                   text=""
-                   alignment="CENTER"
-                   style="-fx-text-fill: #ff4d4f; -fx-font-size: 14px;"
-                   prefWidth="280"
-                   maxWidth="280"/>
             <Button mnemonicParsing="false"
                     prefHeight="40.0"
                     prefWidth="250.0"
