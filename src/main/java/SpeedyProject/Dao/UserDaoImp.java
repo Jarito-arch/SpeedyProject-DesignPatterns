@@ -4,7 +4,10 @@ import SpeedyProject.DataBase.DataBaseConnection;
 import SpeedyProject.Models.User;
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
+import static SpeedyProject.DataBase.DataBaseConnection.getConnection;
 
 public class UserDaoImp implements UserDao{
     @Override
@@ -12,7 +15,7 @@ public class UserDaoImp implements UserDao{
         User user = null;
         try (
                 Connection
-                        connection = DataBaseConnection.getConnection();
+                        connection = getConnection();
                 CallableStatement
                         callableStatement = connection.prepareCall("{call sp_login(?,?)}")
         ) {
@@ -34,12 +37,37 @@ public class UserDaoImp implements UserDao{
         }
         return user;
     }
+    public User findByEmail(String email) {
+        try(Connection connection = getConnection();
+            CallableStatement
+                    callableStatement = connection.prepareCall("{CALL sp_findByEmail(?)}")) {
+
+            callableStatement.setString(1,email);
+
+            ResultSet resultSet = callableStatement.executeQuery();
+
+            if(resultSet.next()){
+                User user = new User();
+                user.setId(resultSet.getInt("id"));
+                user.setName(resultSet.getString("name"));
+                user.setEmail(resultSet.getString("email"));
+                user.setPassword(resultSet.getString("passwd"));
+                return user;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
 
     @Override
     public boolean register(User user) {
         try(
                 Connection
-                    connection = DataBaseConnection.getConnection();
+                    connection = getConnection();
                 CallableStatement
                     callableStatement = connection.prepareCall("{call sp_register(?,?,?)}")
         ){

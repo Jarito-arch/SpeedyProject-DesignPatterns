@@ -18,8 +18,7 @@ import java.io.IOException;
 public class RegisterController {
     @FXML
     private void goToLogin(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(
-                getClass().getResource("/Views/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Views/Login.fxml"));
         Stage stage = (Stage) ((Node) event.getSource())
                 .getScene()
                 .getWindow();
