@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Local DB credentials (never commit real credentials) ###
+src/main/resources/db.properties

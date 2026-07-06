@@ -1,19 +1,41 @@
 package SpeedyProject.DataBase;
+
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
 
 public class DataBaseConnection {
 
-    private static final String URL ="jdbc:sqlserver://LAPTOP-N14SBG7V:1433;databaseName=DeliveryDB;encrypt=true;trustServerCertificate=true";
-    private static final String user = "sa";
-    private static final String password = "12345";
+    private static final String CONFIG_FILE = "/db.properties";
+    private static Properties properties;
 
-    public static Connection getConnection() throws SQLException{
-        return DriverManager.getConnection(
-                URL,
-                user,
-                password
-        );
+    private static synchronized Properties loadProperties() {
+        if (properties == null) {
+            properties = new Properties();
+            try (InputStream input = DataBaseConnection.class.getResourceAsStream(CONFIG_FILE)) {
+                if (input == null) {
+                    throw new IllegalStateException(
+                            "We couldnt find the db.prperties in resources. " +
+                                    "Copy db.properties. example and add your credentials"
+                    );
+                }
+                properties.load(input);
+            } catch (IOException e) {
+                throw new IllegalStateException("Error reading file:  db.properties", e);
+            }
+        }
+        return properties;
+    }
+
+    public static Connection getConnection() throws SQLException {
+        Properties props = loadProperties();
+        String url = props.getProperty("db.url");
+        String user = props.getProperty("db.user");
+        String password = props.getProperty("db.password");
+
+        return DriverManager.getConnection(url, user, password);
     }
 }
