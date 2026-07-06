@@ -33,7 +33,7 @@ public class LoginController {
         if(user != null){
             Session.getInstance().setUser(user);
             FXMLLoader loader =
-                    new FXMLLoader(getClass().getResource("/views/PrincipalMenu.fxml"));
+                    new FXMLLoader(getClass().getResource("/Views/PrincipalMenu.fxml"));
             System.out.println(
                     Session.getInstance()
                             .getCurrentUser()
