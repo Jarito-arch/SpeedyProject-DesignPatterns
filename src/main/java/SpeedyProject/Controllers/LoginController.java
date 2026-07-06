@@ -23,14 +23,14 @@ public class LoginController {
     @FXML
     private PasswordField txtPassword;
     @FXML
-    private Label lblError;
-
     private UserDao dao = new UserDaoImp();
+    @FXML
+    Label lblError;
 
     @FXML
-    private void login(ActionEvent event) throws IOException{
+    private void login(ActionEvent event) throws IOException {
         User user = dao.login(txtEmail.getText(), txtPassword.getText());
-        if(user != null){
+        if (user != null) {
             Session.getInstance().setUser(user);
             FXMLLoader loader =
                     new FXMLLoader(getClass().getResource("/Views/PrincipalMenu.fxml"));
@@ -43,26 +43,84 @@ public class LoginController {
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
+            //Email and password validation
         } else {
-            lblError.setText("Correo o contraseña incorrectos");
+            User userByEmail = dao.findByEmail(txtEmail.getText());
+            if (txtEmail.getText().isEmpty() || txtPassword.getText().isEmpty()) {
 
-            txtEmail.setStyle("""
-        -fx-background-radius: 10;
-        -fx-border-radius: 10;
-        -fx-border-color: red;
-        -fx-border-width: 2;
-    """);
+                lblError.setText("Debe ingresar email y contraseña");
+                txtPassword.setStyle(
+                        "-fx-focus-color: transparent;" +
+                                "-fx-faint-focus-color: transparent;" +
+                                "-fx-border-color: #e74c3c;" +
+                                "-fx-border-width: 2;" +
+                                "-fx-border-radius: 15;" +
+                                "-fx-background-radius: 15;"
+                );
+                txtEmail.setStyle(
+                        "-fx-focus-color: transparent;" +
+                                "-fx-faint-focus-color: transparent;" +
+                                "-fx-border-color: #e74c3c;" +
+                                "-fx-border-width: 2;" +
+                                "-fx-border-radius: 15;" +
+                                "-fx-background-radius: 15;"
+                );
+                txtEmail.clear();
+                txtPassword.clear();
+                txtEmail.requestFocus();
 
-            txtPassword.setStyle("""
-        -fx-background-radius: 10;
-        -fx-border-radius: 10;
-        -fx-border-color: red;
-        -fx-border-width: 2;
-    """);
+            }
+            else if (userByEmail == null) {
+
+                lblError.setText("El correo no está registrado");
+                txtEmail.setStyle(
+                        "-fx-focus-color: transparent;" +
+                                "-fx-faint-focus-color: transparent;" +
+                                "-fx-border-color: #e74c3c;" +
+                                "-fx-border-width: 2;" +
+                                "-fx-border-radius: 15;" +
+                                "-fx-background-radius: 15;"
+                );
+                txtPassword.setStyle(
+                        "-fx-focus-color: transparent;" +
+                                "-fx-faint-focus-color: transparent;" +
+                                "-fx-border-color: #e74c3c;" +
+                                "-fx-border-width: 2;" +
+                                "-fx-border-radius: 15;" +
+                                "-fx-background-radius: 15;"
+                );
+
+                txtEmail.clear();
+                txtPassword.clear();
+                txtEmail.requestFocus();
+
+            }
+            else {
+
+                lblError.setText("Contraseña incorrecta");
+                txtEmail.setStyle(
+                        "-fx-focus-color: transparent;" +
+                                "-fx-faint-focus-color: transparent;" +
+                                "-fx-border-color: #2ecc71;" +
+                                "-fx-border-width: 2;" +
+                                "-fx-border-radius: 15;" +
+                                "-fx-background-radius: 15;"
+                );
+                txtPassword.setStyle("-fx-border-color: red;" +
+                        " -fx-border-width: 2;" +
+                        " -fx-border-radius: 15; " +
+                        "-fx-background-radius: 15;" +
+                        "-fx-focus-color: transparent");
+
+                txtPassword.clear();
+                txtPassword.requestFocus();
+            }
+
+
         }
     }
     @FXML
-    private void goToRegister(ActionEvent event) throws IOException{
+    private void goToRegister(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(
                 getClass().getResource("/Views/Register.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

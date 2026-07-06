@@ -39,6 +39,11 @@
                     style="-fx-background-radius: 10;
            -fx-border-radius: 10;
            -fx-border-color: #d9d9d9;" />
+            <Label fx:id="lblError" text="" textFill="RED" alignment="CENTER" maxWidth="Infinity">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
             <Button mnemonicParsing="false"
                     prefHeight="40.0"
                     prefWidth="250.0"

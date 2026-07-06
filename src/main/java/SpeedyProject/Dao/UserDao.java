@@ -6,4 +6,5 @@ import SpeedyProject.Models.User;
 public interface UserDao {
     User login(String email, String password);
     boolean register(User user);
+    User findByEmail(String email);
 }
