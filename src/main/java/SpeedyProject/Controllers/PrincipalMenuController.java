@@ -26,7 +26,7 @@ public class PrincipalMenuController {
     private void goToComerces(ActionEvent event) throws IOException{
 
         Parent root = FXMLLoader.load(
-                getClass().getResource("/views/Comerces.fxml"));
+                getClass().getResource("/Views/Comerces.fxml"));
         Stage stage = (Stage) ((Node) event.getSource())
                 .getScene()
                 .getWindow();
@@ -36,7 +36,7 @@ public class PrincipalMenuController {
     @FXML
     private void goToShoppingCart(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(
-                getClass().getResource("/views/ShoppingCart.fxml"));
+                getClass().getResource("/Views/ShoppingCart.fxml"));
         Stage stage = (Stage) ((Node) event.getSource())
                 .getScene()
                 .getWindow();
