@@ -26,6 +26,11 @@
             <TextField fx:id="txtEmail" maxWidth="280.0" prefHeight="38.0" prefWidth="200.0" promptText="Correo electrónico" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #d9d9d9;" />
             <PasswordField fx:id="txtPassword" maxWidth="280.0" prefHeight="38.0" prefWidth="200.0" promptText="Contraseña" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #d9d9d9;" />
             <PasswordField fx:id="txtConfirmPassword" maxWidth="280.0" prefHeight="38.0" prefWidth="150.0" promptText="Confirmar contraseña" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #d9d9d9;" />
+            <Label fx:id="lblError" text="" textFill="RED" alignment="CENTER" maxWidth="Infinity" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
             <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #ff6a00; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;" text="Registrarse" onAction="#register"/>
             <HBox alignment="CENTER" prefHeight="23.0" prefWidth="336.0" spacing="5.0">
                <children>

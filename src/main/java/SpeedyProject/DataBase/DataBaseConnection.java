@@ -18,8 +18,8 @@ public class DataBaseConnection {
             try (InputStream input = DataBaseConnection.class.getResourceAsStream(CONFIG_FILE)) {
                 if (input == null) {
                     throw new IllegalStateException(
-                            "We couldnt find the db.prperties in resources. " +
-                                    "Copy db.properties. example and add your credentials"
+                            "No se encontro db.properties en resources. " +
+                                    "Copia db.properties.example y agrega tus credenciales."
                     );
                 }
                 properties.load(input);

@@ -1,15 +1,20 @@
 package SpeedyProject.Models;
 
-import java.util.List;
-
 public class User {
     private int id;
     private String name;
     private String email;
     private String password;
-    //
-    private ShoppingCart shoppingCart;
-    private List<Order> orders;
+
+    public User() {
+    }
+
+    public User(int id, String name, String password, String email) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+        this.email = email;
+    }
 
     public int getId() {
         return id;
@@ -41,20 +46,5 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-    public User(){};
-
-    public User(int id, String name, String password, String email){
-        this.id = id;
-        this.name = name;
-        this.password = password;
-        this.email = email;
-    }
-
-    public void login(){
-
-    }
-    public void logout(){
-
     }
 }
